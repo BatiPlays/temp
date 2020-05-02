@@ -1,0 +1,203 @@
+html
+{
+    background-color: gray;
+}
+
+
+
+.nav
+{
+    z-index: 10;
+
+    position: absolute;
+    left: 25%;
+    top: 2em;
+    width: 33%;
+    background-color: white;
+    transform: translate(-50%,0%);
+    border-radius: 1em;
+    padding: 0 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: inline-flex;
+}
+
+.nav p
+{
+    padding: 0 0.5em;
+    color: gray;
+    transition: 0.5s ease;
+}
+.nav p:hover
+{
+    color: black;
+}
+
+
+
+.canvas
+{
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.addLieferant, .addArtikel
+{
+    z-index: 10;
+
+    position: fixed;
+    left: 72.5%;
+    top: 2em;
+    width: 12.5%;
+    background-color: white;
+    transform: translate(-50%,0%);
+    border-radius: 1em;
+    padding: 0 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    text-align: center;
+}
+.addArtikel
+{
+    left: 87.5%;
+}
+.addLieferant p, .addArtikel p
+{
+    color: gray;
+    transition: 0.5s ease;
+}
+.addLieferant p:hover, .addArtikel p:hover
+{
+    color: black;
+}
+
+.card, .card_palette, .card_artikel, .card_artikel_delete, .card_export, .card_empty
+{
+    position: relative;
+    left: 50%;
+    top: 7em;
+    min-width: 20em;
+    max-width: 33%;
+    background-color: white;
+    transform: translate(-50%,0%);
+    border-radius: 1em;
+    padding: 0.25em 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    margin-bottom: 1em;
+
+    transition: 0.5s ease;
+}
+
+.card_export
+{
+    max-width: 20%;
+}
+.card_palette
+{
+    max-width: 30%;
+}
+.card_artikel
+{
+    max-width: 27%;
+}
+.card_artikel_delete
+{
+    background-color: #f99;
+    max-width: 27%;
+}
+
+.card .title p, .card_palette .title p
+{
+    margin-top: -1em;
+}
+
+.menu
+{
+    display: inline-flex;
+    width: 100%;
+}
+.menu .right
+{
+    position: relative;
+    color: gray;
+    left: 55%;
+}
+
+.storage
+{
+    position: absolute;
+    left: 100%;
+    top: 7em;
+    max-width: 50%;
+    opacity: 0;
+
+    transition: 0.5s ease;
+}
+
+.items
+{
+    position: absolute;
+    left: 125%;
+    top: 7em;
+    max-width: 50%;
+    opacity: 0;
+
+    transition: 0.5s ease;
+}
+
+.items_delete
+{
+    background-color: #f99;
+}
+
+input_box
+{
+    border: solid;
+}
+
+.search
+{
+    position: fixed;
+    left: 1em;
+    top: 5em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+}
+
+.head
+{
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+
+    padding-left: 0.5em;
+    margin: 1em;
+}
+
+.head input[type=text]
+{
+    position: relative;
+    background-color: #eee;
+
+    border: 0;
+    border-radius: 1em;
+    width: 10em;
+    padding: 1em;
+}
+
+.login input[type=text], .login input[type=password]
+{
+    border: 0;
+    border-radius: 1em;
+    width: 100%;
+
+    padding: 1em;
+}
